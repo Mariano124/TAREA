@@ -40,6 +40,13 @@ function getCountryTranslatedName(isoCode){
                 }
             }
         }
+function getCountriesBySubregion(isoCode){
+        for (let index = 0; index < countries.length; index ++){
+            if (countries[index].subregion == isoCode){
+                return countries[index];
+            }
+        }
+    }
     console.log(
         '///// Ejercicio 1 /////\n',
         getCountryByIso3('ARG'),
