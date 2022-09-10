@@ -33,6 +33,13 @@ function getCountryByIso3(isoCode){
             }
         }
     }
+function getCountryTranslatedName(isoCode){
+            for (let index = 0; index < countries.length; index ++){
+                if (countries[index].iso3 == isoCode){
+                    return countries[index];
+                }
+            }
+        }
     console.log(
         '///// Ejercicio 1 /////\n',
         getCountryByIso3('ARG'),
